@@ -103,24 +103,24 @@ nav {
   );
   border-radius: 999px;
   margin: 12px auto 28px;
-  max-width: 860px;
-  padding: 8px 10px;
+  max-width: 960px;
+  padding: 6px 8px;
   border: 1px solid rgba(148, 163, 184, 0.5);
 }
 
 .nav-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  flex-wrap: nowrap;
+  gap: 2px;
   justify-content: center;
   list-style: none;
 }
 
 .nav-list a {
   display: inline-block;
-  padding: 8px 14px;
+  padding: 7px 10px;
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   text-decoration: none;
   color: var(--muted);
   border: 1px solid transparent;
@@ -513,6 +513,11 @@ footer {
   nav {
     border-radius: 14px;
     padding: 6px 8px;
+    max-width: 100%;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
   }
 
   .nav-list a {
