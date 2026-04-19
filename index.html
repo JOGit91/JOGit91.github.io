@@ -20,13 +20,14 @@
       <strong>Senior Detection Engineer, Team Lead</strong> at <a href="https://www.blumira.com">Blumira</a> · Volunteer Security Analyst at <a href="https://thedfirreport.com">The DFIR Report</a>
     </p>
     <p class="tagline">
-      I build, measure, and improve detection systems at scale. My work sits at the intersection of detection engineering, security automation, and data-driven decision making. I believe the highest-value work in detection engineering is judgment — understanding threats, crafting detection logic, and guiding analysts through response — and everything else should be automated.
+      I'm a detection engineer with 8+ years in security and 4+ years focused on detection engineering at scale. I lead a small team at Blumira, where I co-built a detection-as-code platform and author production detections across endpoint, identity, cloud, network, and email. I developed the reporting and analytics layer that measures detection suite health, tracking precision, false positive trends, MTTD, and coverage metrics across the full production library. I apply GenAI tools strategically to build automation that eliminates repetitive work, creating more space for the kind of deep, ambiguous problem solving and experimentation that detection engineering benefits from most.
     </p>
   </header>
 
   <nav>
     <ul class="nav-list">
       <li><a href="#what-i-do">What I Do</a></li>
+      <li><a href="#performance">Performance</a></li>
       <li><a href="#tooling">Tooling</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#podcasts">Podcasts</a></li>
@@ -49,7 +50,12 @@
 
             <div class="feature">
               <p class="feature-title">Detection Engineering at Scale</p>
-              <p>I lead a detection engineering team responsible for 945+ active production detections spanning 97 log types from 40+ vendor integrations — Windows, macOS, Linux, M365, Azure/Entra ID, AWS, GCP, Google Workspace, EDR, firewalls, email, identity, and more. I use MITRE ATT&CK to identify coverage gaps and prioritize development using a risk-based approach.</p>
+              <p>I lead and contribute to a detection engineering team responsible for 945+ active production detections spanning 97 log types from 40+ vendor integrations (Windows, macOS, Linux, M365, Azure/Entra ID, AWS, GCP, Google Workspace, EDR, firewalls, email, identity, and more). I remain one of the team's most active individual contributors, personally authoring detections and handling complex threat modeling for high-priority coverage areas. I use MITRE ATT&CK to identify coverage gaps and prioritize development using a risk-based approach.</p>
+            </div>
+
+            <div class="feature">
+              <p class="feature-title">Team Leadership &amp; Agile Delivery</p>
+              <p>As Scrum Lead for the detection engineering team, I own the full agile delivery cycle, running sprint planning, backlog refinement, and retrospectives, setting quarterly OKRs, and tracking team metrics like velocity and sprint completion. I also manage two direct reports and maintain regular 1:1s focused on growth and performance.</p>
             </div>
 
             <div class="feature">
@@ -58,7 +64,7 @@
             </div>
 
             <div class="feature">
-              <p class="feature-title">Detection Health & Metrics</p>
+              <p class="feature-title">Detection Health &amp; Metrics</p>
               <p>I built a comprehensive detection lifecycle monitoring program that tracks precision, false positive rates, MTTD, DRAPE scores (Detection Reliability And Precision Efficiency), match dropoff/spikes, resolution trends, and customer filter activity. This data drives every tuning and prioritization decision we make.</p>
             </div>
 
@@ -71,11 +77,21 @@
         </div>
       </section>
 
-      <!-- Selected Work: Tooling & Automation -->
+      <!-- Detection Suite Performance -->
+      <section id="performance">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Detection Suite Performance <span class="tag">Selected Work</span></h2>
+            <p>Over the past two years, the detection engineering team has made significant measurable improvements to detection quality, including meaningful gains in precision, reductions in mean time to detect for high-priority threats, and steady growth in detection coverage across customer environments. I track these outcomes through a custom reporting program built in BigQuery, covering precision rates, false positive trends, MTTD by detection type, DRAPE scores, and customer coverage metrics. Data drives every prioritization and tuning decision we make.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tooling & Automation -->
       <section id="tooling">
         <div class="card">
           <div class="card-inner">
-            <h2>Tooling & Automation <span class="tag">Selected Work</span></h2>
+            <h2>Tooling &amp; Automation <span class="tag">Selected Work</span></h2>
             <p>I systematically automate process overhead so the team can focus on high-judgment detection engineering work.</p>
 
             <div class="feature">
@@ -85,12 +101,12 @@
 
             <div class="feature">
               <p class="feature-title">Workflow Generation System</p>
-              <p>GenAI-powered investigation playbook generator aligned to NIST 800-61r2 incident response phases. Reduced workflow creation time from 1-2 hours to minutes while raising quality consistency across the team.</p>
+              <p>GenAI-powered investigation playbook generator aligned to NIST 800-61r2 incident response phases. Reduced workflow creation time from 1-2 hours to minutes while raising quality consistency across the team. The result is more accurate, consistent playbooks that guide responders of any experience level through an incident with confidence.</p>
             </div>
 
             <div class="feature">
               <p class="feature-title">AutoDF</p>
-              <p>Bulk detection filter automation with concurrent execution, filter caching, and structured output. Replaced a manual, org-by-org process with a single command.</p>
+              <p>Automated the process of applying detection filters at scale, replacing what was previously a time-consuming, manual, org-by-org process with a single, dedicated tool.</p>
             </div>
 
             <div class="feature">
@@ -105,13 +121,13 @@
 
             <div class="feature">
               <p class="feature-title">Detection Knowledge Assistant</p>
-              <p>LLM-powered natural-language query tool over the detection-as-code repository, enabling anyone to ask questions like "What is our coverage for ShinyHunters?" or "How many detections do we have related to PowerShell?" and get instant, accurate answers.</p>
+              <p>An LLM-powered query interface built on top of the detection-as-code repository. It lets anyone ask natural-language questions about detection coverage and get accurate, metadata-backed answers instantly, making the detection library accessible to the whole organization, not just the engineers who built it.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Selected Work: External Publications -->
+      <!-- External Publications -->
       <section id="publications">
         <div class="card">
           <div class="card-inner">
@@ -122,7 +138,7 @@
               <li>
                 <span class="pub-date">Nov 2025</span>
                 <a href="https://www.scworld.com/news/cyberattacks-on-legacy-firewalls-continue-what-security-teams-can-do">Cyberattacks on legacy firewalls continue. What security teams can do</a>
-                <span class="pub-source">SC World</span>
+                <span class="pub-source">SC World (Quoted)</span>
               </li>
               <li>
                 <span class="pub-date">Oct 2025</span>
@@ -154,11 +170,11 @@
         </div>
       </section>
 
-      <!-- Selected Work: Podcasts & Video -->
+      <!-- Podcasts & Video -->
       <section id="podcasts">
         <div class="card">
           <div class="card-inner">
-            <h2>Podcasts & Video <span class="tag">Media</span></h2>
+            <h2>Podcasts &amp; Video <span class="tag">Media</span></h2>
 
             <div class="feature">
               <p class="feature-title">DFIR Discussions: Another Confluence Bites the Dust</p>
@@ -180,7 +196,7 @@
         </div>
       </section>
 
-      <!-- Selected Work: Blumira Blog Posts -->
+      <!-- Blumira Blog Posts -->
       <section id="blog">
         <div class="card">
           <div class="card-inner">
@@ -188,110 +204,32 @@
             <p>Threat advisories, vulnerability analysis, and detection engineering content published on the Blumira blog.</p>
 
             <ul class="pub-list">
-              <li>
-                <span class="pub-date">2026</span>
-                <a href="https://www.blumira.com/blog/how-mintsloader-uses-a-legacy-windows-binary-to-gain-a-foothold">How MintsLoader Uses a Legacy Windows Binary to Gain a Foothold</a>
-              </li>
-              <li>
-                <span class="pub-date">2026</span>
-                <a href="https://www.blumira.com/blog/smartapesg-returns-with-unique-obfuscation-techniques">SmartApeSG Returns with Unique Obfuscation Techniques</a>
-              </li>
-              <li>
-                <span class="pub-date">Sep 2025</span>
-                <a href="https://www.blumira.com/blog/cisco-snmp-zero-day-vulnerability-critical-patch-and-mitigations">Cisco SNMP Zero-Day Vulnerability: Critical Patch and Mitigations</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2025</span>
-                <a href="https://www.blumira.com/blog/mysonicwall-cloud-backup-service-breach-leads-to-exposed-configuration-files">MySonicWall Cloud Backup Service Breach</a>
-              </li>
-              <li>
-                <span class="pub-date">Jul 2025</span>
-                <a href="https://www.blumira.com/blog/critical-microsoft-sharepoint-vulnerability-patch-cve-2025-53770-now">Critical Microsoft SharePoint Server Vulnerability</a>
-              </li>
-              <li>
-                <span class="pub-date">Jan 2025</span>
-                <a href="https://www.blumira.com/blog/sonicwall-discloses-multiple-vulnerabilities-including-a-high-severity-authentication-bypass-flaw">SonicWall Auth Bypass Flaw</a>
-              </li>
-              <li>
-                <span class="pub-date">Dec 2024</span>
-                <a href="https://www.blumira.com/blog/vulnerabilities-in-cleo-software-allow-for-unauthenticated-remote-code-execution-via-cve-2024-55956">Cleo Software Unauthenticated RCE via CVE-2024-55956</a>
-              </li>
-              <li>
-                <span class="pub-date">Dec 2024</span>
-                <a href="https://www.blumira.com/blog/sonicwall-advisory-reveals-two-unauthenticated-remote-code-execution-vulnerabilities">SonicWall: Two Unauthenticated RCE Vulnerabilities</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2024</span>
-                <a href="https://www.blumira.com/blog/fortimanager-unauthenticated-remote-access-vulnerability-cve-2024-47575">FortiManager Unauthenticated Remote Access (CVE-2024-47575)</a>
-              </li>
-              <li>
-                <span class="pub-date">Sep 2024</span>
-                <a href="https://www.blumira.com/blog/cve-2024-38063-windows-tcp/ip-remote-code-execution-vulnerability">CVE-2024-38063 Windows TCP/IP RCE Vulnerability</a>
-              </li>
-              <li>
-                <span class="pub-date">Jul 2024</span>
-                <a href="https://www.blumira.com/blog/new-unauthenticated-remote-code-execution-flaw-identified-in-openssh-server">OpenSSH Server Unauthenticated RCE Flaw</a>
-              </li>
-              <li>
-                <span class="pub-date">Apr 2024</span>
-                <a href="https://www.blumira.com/blog/cisco-asa-and-ftd-firewalls-targeted-by-state-sponsored-hacking-group-arcanedoor">Cisco ASA/FTD Targeted by "ArcaneDoor"</a>
-              </li>
-              <li>
-                <span class="pub-date">Mar 2024</span>
-                <a href="https://www.blumira.com/blog/the-hedgehog-defense-2-disk-images">The Hedgehog Defense #2: Defend Against Disk Images</a>
-              </li>
-              <li>
-                <span class="pub-date">Feb 2024</span>
-                <a href="https://www.blumira.com/blog/critical-screenconnect-vulnerabilities-allow-remote-code-execution">Critical ScreenConnect RCE Vulnerabilities</a>
-              </li>
-              <li>
-                <span class="pub-date">Feb 2024</span>
-                <a href="https://www.blumira.com/blog/fortinet-vulnerabilities-in-fortios-sslvpnd-and-fgfmd-lead-to-rce">Fortinet sslvpnd and fgfmd RCE Vulnerabilities</a>
-              </li>
-              <li>
-                <span class="pub-date">Feb 2024</span>
-                <a href="https://www.blumira.com/blog/the-hedgehog-defense-default-app">The Hedgehog Defense: Default Apps</a>
-              </li>
-              <li>
-                <span class="pub-date">Feb 2024</span>
-                <a href="https://www.blumira.com/blog/anydesk-suffers-cyberattack">AnyDesk Suffers Cyberattack</a>
-              </li>
-              <li>
-                <span class="pub-date">Nov 2023</span>
-                <a href="https://www.blumira.com/blog/cve-2023-4966-citrix-bleed">Citrix NetScaler Auth Bypass (CVE-2023-4966)</a>
-              </li>
-              <li>
-                <span class="pub-date">Nov 2023</span>
-                <a href="https://www.blumira.com/blog/correlating-geoip-lookups">Correlating GeoIP Lookups</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2023</span>
-                <a href="https://www.blumira.com/blog/cve-2023-20198">CVE-2023-20198: Cisco IOS Web UI Vulnerability</a>
-              </li>
-              <li>
-                <span class="pub-date">Sep 2023</span>
-                <a href="https://www.blumira.com/blog/password-spraying-attacks-against-cisco-asa-ssl-vpns">Password Spraying vs Cisco ASA SSL VPNs</a>
-              </li>
-              <li>
-                <span class="pub-date">Apr 2023</span>
-                <a href="https://www.blumira.com/blog/queuejumper-cve-2023-21554">QueueJumper: CVE-2023-21554 MSMQ RCE</a>
-              </li>
-              <li>
-                <span class="pub-date">Dec 2022</span>
-                <a href="https://www.blumira.com/blog/cve-2022-40684">Fortinet SSL-VPN RCE (CVE-2022-40684)</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2022</span>
-                <a href="https://www.blumira.com/blog/event-id-4732">Event ID 4732: The Case of the Missing Username</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2022</span>
-                <a href="https://www.blumira.com/blog/performing-active-directory-password-audits-with-nthashes-and-ntdsaudit">AD Password Auditing with NtdsAudit & NThashes</a>
-              </li>
-              <li>
-                <span class="pub-date">Oct 2022</span>
-                <a href="https://www.blumira.com/blog/how-to-find-a-user-with-their-security-id-in-windows">Find a User with Their Security ID in Windows</a>
-              </li>
+              <li><span class="pub-date">Apr 2026</span><a href="https://www.blumira.com/blog/smartapesg-returns-with-unique-obfuscation-techniques">SmartApeSG Returns with Unique Obfuscation Techniques</a></li>
+              <li><span class="pub-date">Feb 2026</span><a href="https://www.blumira.com/blog/how-mintsloader-uses-a-legacy-windows-binary-to-gain-a-foothold">How MintsLoader Uses a Legacy Windows Binary to Gain a Foothold</a></li>
+              <li><span class="pub-date">Oct 2025</span><a href="https://www.blumira.com/blog/mysonicwall-cloud-backup-service-breach-leads-to-exposed-configuration-files">MySonicWall Cloud Backup Service Breach</a></li>
+              <li><span class="pub-date">Sep 2025</span><a href="https://www.blumira.com/blog/cisco-snmp-zero-day-vulnerability-critical-patch-and-mitigations">Cisco SNMP Zero-Day Vulnerability: Critical Patch and Mitigations</a></li>
+              <li><span class="pub-date">Jul 2025</span><a href="https://www.blumira.com/blog/critical-microsoft-sharepoint-vulnerability-patch-cve-2025-53770-now">Critical Microsoft SharePoint Server Vulnerability</a></li>
+              <li><span class="pub-date">Jan 2025</span><a href="https://www.blumira.com/blog/sonicwall-discloses-multiple-vulnerabilities-including-a-high-severity-authentication-bypass-flaw">SonicWall Auth Bypass Flaw</a></li>
+              <li><span class="pub-date">Dec 2024</span><a href="https://www.blumira.com/blog/vulnerabilities-in-cleo-software-allow-for-unauthenticated-remote-code-execution-via-cve-2024-55956">Cleo Software Unauthenticated RCE via CVE-2024-55956</a></li>
+              <li><span class="pub-date">Dec 2024</span><a href="https://www.blumira.com/blog/sonicwall-advisory-reveals-two-unauthenticated-remote-code-execution-vulnerabilities">SonicWall: Two Unauthenticated RCE Vulnerabilities</a></li>
+              <li><span class="pub-date">Oct 2024</span><a href="https://www.blumira.com/blog/fortimanager-unauthenticated-remote-access-vulnerability-cve-2024-47575">FortiManager Unauthenticated Remote Access (CVE-2024-47575)</a></li>
+              <li><span class="pub-date">Sep 2024</span><a href="https://www.blumira.com/blog/cve-2024-38063-windows-tcp/ip-remote-code-execution-vulnerability">CVE-2024-38063 Windows TCP/IP RCE Vulnerability</a></li>
+              <li><span class="pub-date">Jul 2024</span><a href="https://www.blumira.com/blog/new-unauthenticated-remote-code-execution-flaw-identified-in-openssh-server">OpenSSH Server Unauthenticated RCE Flaw</a></li>
+              <li><span class="pub-date">Apr 2024</span><a href="https://www.blumira.com/blog/cisco-asa-and-ftd-firewalls-targeted-by-state-sponsored-hacking-group-arcanedoor">Cisco ASA/FTD Targeted by "ArcaneDoor"</a></li>
+              <li><span class="pub-date">Mar 2024</span><a href="https://www.blumira.com/blog/the-hedgehog-defense-2-disk-images">The Hedgehog Defense #2: Defend Against Disk Images</a></li>
+              <li><span class="pub-date">Feb 2024</span><a href="https://www.blumira.com/blog/critical-screenconnect-vulnerabilities-allow-remote-code-execution">Critical ScreenConnect RCE Vulnerabilities</a></li>
+              <li><span class="pub-date">Feb 2024</span><a href="https://www.blumira.com/blog/fortinet-vulnerabilities-in-fortios-sslvpnd-and-fgfmd-lead-to-rce">Fortinet sslvpnd and fgfmd RCE Vulnerabilities</a></li>
+              <li><span class="pub-date">Feb 2024</span><a href="https://www.blumira.com/blog/the-hedgehog-defense-default-app">The Hedgehog Defense: Default Apps</a></li>
+              <li><span class="pub-date">Feb 2024</span><a href="https://www.blumira.com/blog/anydesk-suffers-cyberattack">AnyDesk Suffers Cyberattack</a></li>
+              <li><span class="pub-date">Nov 2023</span><a href="https://www.blumira.com/blog/cve-2023-4966-citrix-bleed">Citrix NetScaler Auth Bypass (CVE-2023-4966)</a></li>
+              <li><span class="pub-date">Nov 2023</span><a href="https://www.blumira.com/blog/correlating-geoip-lookups">Correlating GeoIP Lookups</a></li>
+              <li><span class="pub-date">Oct 2023</span><a href="https://www.blumira.com/blog/cve-2023-20198">CVE-2023-20198: Cisco IOS Web UI Vulnerability</a></li>
+              <li><span class="pub-date">Sep 2023</span><a href="https://www.blumira.com/blog/password-spraying-attacks-against-cisco-asa-ssl-vpns">Password Spraying vs Cisco ASA SSL VPNs</a></li>
+              <li><span class="pub-date">Apr 2023</span><a href="https://www.blumira.com/blog/queuejumper-cve-2023-21554">QueueJumper: CVE-2023-21554 MSMQ RCE</a></li>
+              <li><span class="pub-date">Dec 2022</span><a href="https://www.blumira.com/blog/cve-2022-40684">Fortinet SSL-VPN RCE (CVE-2022-40684)</a></li>
+              <li><span class="pub-date">Oct 2022</span><a href="https://www.blumira.com/blog/event-id-4732">Event ID 4732: The Case of the Missing Username</a></li>
+              <li><span class="pub-date">Oct 2022</span><a href="https://www.blumira.com/blog/performing-active-directory-password-audits-with-nthashes-and-ntdsaudit">AD Password Auditing with NtdsAudit &amp; NThashes</a></li>
+              <li><span class="pub-date">Oct 2022</span><a href="https://www.blumira.com/blog/how-to-find-a-user-with-their-security-id-in-windows">Find a User with Their Security ID in Windows</a></li>
             </ul>
           </div>
         </div>
@@ -304,12 +242,14 @@
             <h2>Community <span class="tag">Give Back</span></h2>
 
             <h3>STRONGHOLD</h3>
-            <p>I founded and lead <strong>STRONGHOLD</strong> (Security Team Roundtable for Operational Networking, Growth, and Holistic Oversight of Layered Defenses) — a monthly internal security meetup at Blumira. The group brings together anyone interested in cybersecurity to share knowledge, discuss current threats, and learn from each other. I've led live attack demonstrations, facilitated discussions on emerging vulnerabilities, and hosted cybersecurity-themed games. The focus is on elevating the knowledge of those around us in a relaxed, inclusive environment.</p>
+            <p>I founded and lead <strong>STRONGHOLD</strong> (Security Team Roundtable for Operational Networking, Growth, and Holistic Oversight of Layered Defenses), a monthly internal security meetup at Blumira. The group brings together anyone interested in cybersecurity to share knowledge, discuss current threats, and learn from each other. I've led live attack demonstrations, facilitated discussions on emerging vulnerabilities, and hosted cybersecurity-themed games. The focus is on elevating the knowledge of those around us in a relaxed, inclusive environment.</p>
+
+            <h3>The DFIR Report</h3>
+            <p>I volunteer as a security analyst with <a href="https://thedfirreport.com">The DFIR Report</a>, collaborating with a small team to perform threat analysis and incident investigation. Our work produces public incident reports used by security teams globally.</p>
 
             <h3>Open Source</h3>
             <ul>
               <li><a href="https://github.com/avasero/psexposed">PSExposed</a> — Provided early testing and feedback prior to public release</li>
-              <li><a href="https://thedfirreport.com">The DFIR Report</a> — Ongoing volunteer threat analysis contributions</li>
             </ul>
 
             <h3>Continuous Learning</h3>
@@ -329,7 +269,7 @@
             <h2>Technical Skills <span class="tag">Toolbox</span></h2>
 
             <div class="skill-group">
-              <p class="skill-group-label">Detection & Security</p>
+              <p class="skill-group-label">Detection &amp; Security</p>
               <div class="pills">
                 <span class="pill accent">Detection-as-Code</span>
                 <span class="pill">SIEM</span>
@@ -366,7 +306,7 @@
             </div>
 
             <div class="skill-group">
-              <p class="skill-group-label">Languages & Data</p>
+              <p class="skill-group-label">Languages &amp; Data</p>
               <div class="pills">
                 <span class="pill accent">Python</span>
                 <span class="pill accent">SQL (BigQuery)</span>
@@ -377,7 +317,7 @@
             </div>
 
             <div class="skill-group">
-              <p class="skill-group-label">Platforms & Tools</p>
+              <p class="skill-group-label">Platforms &amp; Tools</p>
               <div class="pills">
                 <span class="pill">GitLab CI/CD</span>
                 <span class="pill">AWS</span>
@@ -453,7 +393,7 @@
           </div>
           <div class="sidebar-stat">
             <span class="label">Blog Posts</span>
-            <span class="value">25+</span>
+            <span class="value">26+</span>
           </div>
           <div class="sidebar-stat">
             <span class="label">Publications</span>
@@ -463,14 +403,6 @@
             <span class="label">Podcast Episodes</span>
             <span class="value">30+</span>
           </div>
-          <div class="sidebar-stat">
-            <span class="label">Precision</span>
-            <span class="value">90.6%</span>
-          </div>
-          <div class="sidebar-stat">
-            <span class="label">Customer Coverage</span>
-            <span class="value">91.7%</span>
-          </div>
         </div>
 
         <hr class="sidebar-divider">
@@ -478,6 +410,7 @@
         <h3>Links</h3>
         <div class="sidebar-links">
           <a href="#what-i-do">What I Do</a>
+          <a href="#performance">Performance</a>
           <a href="#tooling">Tooling</a>
           <a href="#publications">Publications</a>
           <a href="#podcasts">Podcasts</a>
