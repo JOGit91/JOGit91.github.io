@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
+    --card-bg: #1e293b;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 { font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1.5rem; color: var(--accent); font-weight: 300; }
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 1px solid #334155;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: var(--accent); }
+
+/* Main Sections */
+section {
+    padding: 5rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alt-bg { background-color: var(--bg-secondary); max-width: 100%; }
+
+h2 { font-size: 2.25rem; margin-bottom: 2rem; color: var(--accent); }
+
+.lead-text { font-size: 1.25rem; color: var(--text-dim); max-width: 800px; }
+
+/* Grid & Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); border-color: var(--accent); }
+
+.card h3 { margin-bottom: 1rem; color: var(--text-main); }
+
+/* Skills */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.skill-group h4 { color: var(--accent); margin-bottom: 0.5rem; }
+
+/* Footer */
+footer {
+    padding: 5rem 10%;
+    text-align: center;
+    border-top: 1px solid #334155;
+}
+
+.footer-links a {
+    color: var(--text-main);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.copyright { margin-top: 2rem; color: var(--text-dim); font-size: 0.8rem; }
