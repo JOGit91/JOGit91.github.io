@@ -1,92 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Ouellette | Detection Engineering Leader</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Ouellette — Senior Detection Engineer</title>
+  <meta name="description" content="Senior Detection Engineer & Team Lead at Blumira. Building, measuring, and improving detection systems at scale.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header id="home">
-        <div class="hero-content">
-            <h1>Jake Ouellette</h1>
-            <p class="subtitle">Senior Detection Engineer & Team Lead</p>
-            <p class="location">Blumira • The DFIR Report</p>
+<div class="page">
+
+  <header>
+    <h1>Jake <span class="accent">Ouellette</span></h1>
+    <p class="subtitle">
+      <strong>Senior Detection Engineer, Team Lead</strong> at <a href="https://www.blumira.com">Blumira</a> · Volunteer Security Analyst at <a href="https://thedfirreport.com">The DFIR Report</a>
+    </p>
+    <p class="tagline">
+      I build, measure, and improve detection systems at scale. My work sits at the intersection of detection engineering, security automation, and data-driven decision making. I believe the highest-value work in detection engineering is judgment — understanding threats, crafting detection logic, and guiding analysts through response — and everything else should be automated.
+    </p>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#what-i-do">What I Do</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div>
+
+      <!-- What I Do -->
+      <section id="what-i-do">
+        <div class="card">
+          <div class="card-inner">
+            <h2>What I Do <span class="tag">Core Focus</span></h2>
+
+            <div class="feature">
+              <p class="feature-title">Detection Engineering at Scale</p>
+              <p>I lead a detection engineering team responsible for 945+ active production detections spanning 97 log types from 40+ vendor integrations — Windows, macOS, Linux, M365, Azure/Entra ID, AWS, GCP, Google Workspace, EDR, firewalls, email, identity, and more. I use MITRE ATT&CK to identify coverage gaps and prioritize development using a risk-based approach.</p>
+            </div>
+
+            <div class="feature">
+              <p class="feature-title">Detection-as-Code</p>
+              <p>I co-designed and implemented a scalable detection-as-code platform that replaced manual, ungoverned detection management with version-controlled YAML definitions, CI/CD validation pipelines, automated cloud deployment, and peer code review. Every detection change is tracked, tested, and reviewed before it reaches production.</p>
+            </div>
+
+            <div class="feature">
+              <p class="feature-title">Detection Health & Metrics</p>
+              <p>I built a comprehensive detection lifecycle monitoring program that tracks precision, false positive rates, MTTD, DRAPE scores (Detection Reliability And Precision Efficiency), match dropoff/spikes, resolution trends, and customer filter activity. This data drives every tuning and prioritization decision we make.</p>
+            </div>
+
+            <div class="feature">
+              <p class="feature-title">GenAI Applied to Security Operations</p>
+              <p>I apply GenAI (Cursor, Claude Code) to build production tooling, automate investigation playbook generation, and have designed evaluation frameworks for LLM-powered security features including scoring criteria for accuracy, groundedness, relevance, and temperance.</p>
+            </div>
+
+          </div>
         </div>
-    </header>
+      </section>
 
-    <nav>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#detection">Engineering</a>
-        <a href="#community">Community</a>
-        <a href="#skills">Technical</a>
-        <a href="#connect" class="nav-cta">Connect</a>
-    </nav>
+      <!-- Community -->
+      <section id="community">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Community <span class="tag">Give Back</span></h2>
 
-    <main>
-        <section id="philosophy">
-            <h2>Judgment & Automation</h2>
-            <p class="lead-text">
-                I build, measure, and improve detection systems at scale. I believe the highest-value work in detection engineering is <strong>judgment</strong>—understanding threats, crafting logic, and guiding response—while everything else should be automated.
-            </p>
-        </section>
+            <h3>STRONGHOLD</h3>
+            <p>I founded and lead <strong>STRONGHOLD</strong> (Security Team Roundtable for Operational Networking, Growth, and Holistic Oversight of Layered Defenses) — a monthly internal security meetup at Blumira. The group brings together anyone interested in cybersecurity to share knowledge, discuss current threats, and learn from each other. I've led live attack demonstrations, facilitated discussions on emerging vulnerabilities, and hosted cybersecurity-themed games. The focus is on elevating the knowledge of those around us in a relaxed, inclusive environment.</p>
 
-        <section id="detection">
-            <h2>Detection Engineering at Scale</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Operations</h3>
-                    <p>Leading a team managing <strong>945+ active production detections</strong> across 97 log types and 40+ vendor integrations (M365, AWS, GCP, EDR).</p>
-                </div>
-                <div class="card">
-                    <h3>Detection-as-Code</h3>
-                    <p>Co-designed a platform replacing manual management with version-controlled <strong>YAML definitions</strong> and CI/CD validation pipelines.</p>
-                </div>
-                <div class="card">
-                    <h3>Health & Metrics</h3>
-                    <p>Tracking detection lifecycles via precision, false positive rates, and <strong>DRAPE scores</strong> to drive data-driven tuning decisions.</p>
-                </div>
-            </div>
-        </section>
+            <h3>Open Source</h3>
+            <ul>
+              <li><a href="https://github.com/avasero/psexposed">PSExposed</a> — Provided early testing and feedback prior to public release</li>
+              <li><a href="https://thedfirreport.com">The DFIR Report</a> — Ongoing volunteer threat analysis contributions</li>
+            </ul>
 
-        <section id="community" class="alt-bg">
-            <h2>Community & Leadership</h2>
-            <div class="community-block">
-                <h3>STRONGHOLD</h3>
-                <p>Founder and lead of the Security Team Roundtable for Operational Networking, Growth, and Holistic Oversight of Layered Defenses. A monthly internal meetup focused on live attack demos and emerging threats.</p>
-                <p><em>Volunteer Security Analyst at The DFIR Report.</em></p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Arsenal</h2>
-            <div class="skills-container">
-                <div class="skill-group">
-                    <h4>Languages & Data</h4>
-                    <p>Python, SQL (BigQuery), PowerShell, YAML, RegEx</p>
-                </div>
-                <div class="skill-group">
-                    <h4>Platforms</h4>
-                    <p>GitLab CI/CD, AWS, Azure, GCP, SentinelOne, CrowdStrike, Splunk</p>
-                </div>
-                <div class="skill-group">
-                    <h4>Certifications</h4>
-                    <p>eJPT, CySA+, PenTest+, Security+</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="connect">
-        <h2>Let's Connect</h2>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/jake-ouellette">LinkedIn</a>
-            <a href="mailto:jakeouellette91@gmail.com">Email</a>
+            <h3>Continuous Learning</h3>
+            <ul>
+              <li><strong>Antisyphon Training:</strong> Security Defense and Detection, Advanced Endpoint Investigations, SOC Core Skills, Password Cracking, MITRE ATT&CK</li>
+              <li><strong>Home Lab:</strong> Regularly testing new tools, techniques, and detection strategies</li>
+              <li><strong>Podcasts, Blogs, and Community:</strong> Active consumer and contributor to the security community</li>
+            </ul>
+          </div>
         </div>
-        <p class="copyright">&copy; 2026 Jake Ouellette. Automated with Judgment.</p>
-    </footer>
+      </section>
+
+      <!-- Technical Skills -->
+      <section id="skills">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Technical Skills <span class="tag">Toolbox</span></h2>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Detection & Security</p>
+              <div class="pills">
+                <span class="pill accent">Detection-as-Code</span>
+                <span class="pill">SIEM</span>
+                <span class="pill">Log Analysis</span>
+                <span class="pill">Threat Hunting</span>
+                <span class="pill accent">MITRE ATT&CK</span>
+                <span class="pill">Incident Response</span>
+                <span class="pill">Vulnerability Management</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Detection Coverage</p>
+              <div class="pills">
+                <span class="pill">Windows</span>
+                <span class="pill">macOS</span>
+                <span class="pill">Linux</span>
+                <span class="pill">M365</span>
+                <span class="pill">Azure / Entra ID</span>
+                <span class="pill">AWS</span>
+                <span class="pill">GCP</span>
+                <span class="pill">Google Workspace</span>
+                <span class="pill">SentinelOne</span>
+                <span class="pill">CrowdStrike</span>
+                <span class="pill">Carbon Black</span>
+                <span class="pill">Fortinet</span>
+                <span class="pill">SonicWall</span>
+                <span class="pill">Palo Alto</span>
+                <span class="pill">Cisco</span>
+                <span class="pill">Mimecast</span>
+                <span class="pill">Okta</span>
+                <span class="pill">Duo</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Languages & Data</p>
+              <div class="pills">
+                <span class="pill accent">Python</span>
+                <span class="pill accent">SQL (BigQuery)</span>
+                <span class="pill">PowerShell</span>
+                <span class="pill">YAML</span>
+                <span class="pill">RegEx</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Platforms & Tools</p>
+              <div class="pills">
+                <span class="pill">GitLab CI/CD</span>
+                <span class="pill">AWS</span>
+                <span class="pill">Azure</span>
+                <span class="pill">GCP / BigQuery</span>
+                <span class="pill">Splunk</span>
+                <span class="pill">Nessus</span>
+                <span class="pill">Jira</span>
+                <span class="pill accent">Cursor</span>
+                <span class="pill accent">Claude Code</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Certifications <span class="tag">Credentials</span></h2>
+            <div class="cert-row">
+              <span class="cert">eJPT</span>
+              <span class="cert">CySA+</span>
+              <span class="cert">PenTest+</span>
+              <span class="cert">Security+</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect -->
+      <section id="connect">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Connect <span class="tag">Get in Touch</span></h2>
+            <p>I'm always open to conversations about detection engineering, security automation, or community collaboration.</p>
+            <div class="btn-row">
+              <a href="https://www.linkedin.com/in/jake-ouellette" class="btn btn-primary">LinkedIn</a>
+              <a href="mailto:jakeouellette91@gmail.com" class="btn btn-outline">Email</a>
+              <a href="https://thedfirreport.com" class="btn btn-outline">The DFIR Report</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Sidebar -->
+    <aside>
+      <div class="sidebar-card">
+
+        <h3>At a Glance</h3>
+        <p>A quick snapshot.</p>
+
+        <div style="margin-top: 14px;">
+          <div class="sidebar-stat">
+            <span class="label">Role</span>
+            <span class="value">Team Lead</span>
+          </div>
+          <div class="sidebar-stat">
+            <span class="label">Detections</span>
+            <span class="value">945+</span>
+          </div>
+          <div class="sidebar-stat">
+            <span class="label">Log Types</span>
+            <span class="value">97</span>
+          </div>
+          <div class="sidebar-stat">
+            <span class="label">Integrations</span>
+            <span class="value">40+</span>
+          </div>
+          <div class="sidebar-stat">
+            <span class="label">Precision</span>
+            <span class="value">90.6%</span>
+          </div>
+          <div class="sidebar-stat">
+            <span class="label">Customer Coverage</span>
+            <span class="value">91.7%</span>
+          </div>
+        </div>
+
+        <hr class="sidebar-divider">
+
+        <h3>Links</h3>
+        <div class="sidebar-links">
+          <a href="#what-i-do">What I Do</a>
+          <a href="#community">Community</a>
+          <a href="#skills">Technical Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#connect">Connect</a>
+        </div>
+
+        <hr class="sidebar-divider">
+
+        <h3>Certifications</h3>
+        <div class="cert-row" style="margin-top: 8px;">
+          <span class="cert">eJPT</span>
+          <span class="cert">CySA+</span>
+          <span class="cert">PenTest+</span>
+          <span class="cert">Security+</span>
+        </div>
+
+      </div>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>Jake Ouellette · Senior Detection Engineer · Blumira</p>
+  </footer>
+
+</div>
 
 </body>
 </html>
