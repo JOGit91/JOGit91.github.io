@@ -321,6 +321,12 @@ ul {
   color: var(--accent);
   background: rgba(15, 23, 42, 0.9);
   letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+a.cert:hover {
+  border-color: var(--accent);
+  background: rgba(249, 115, 22, 0.08);
 }
 
 /* Buttons */
